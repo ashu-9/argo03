@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: byebye-world
   labels:
-    app: hello-world
+    app: byebye-world
     org: orange
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: hello-world
+      app: byebye-world
   template:
     metadata:
       labels:
-        app: hello-world
+        app: byebye-world
     spec:
       containers:
-      - name: hello-world
-        image: ashu9/hello-world:latest
+      - name: byebye-world
+        image: ashu9/byebye-world:latest
         ports:
         - containerPort: 5000
